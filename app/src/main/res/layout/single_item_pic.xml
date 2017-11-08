@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/single_item_pic_ll"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/tv_pic"
+    android:background="@color/colorContent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/showpic_rv"
+        android:layout_width="match_parent"
+        android:layout_height="210px"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:text="@string/show_pic"
+            android:textSize="60px" />
+
+        <ImageView
+            android:id="@+id/img_showpic"
+            android:layout_width="188px"
+            android:layout_height="188px"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/right_imgv"
+            android:background="@mipmap/people" />
+
+        <ImageView
+            android:id="@+id/right_imgv"
+            android:layout_width="25px"
+            android:layout_height="44px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15px"
+            android:background="@mipmap/arrow_01" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:id="@+id/nativepic_rv"
+        android:layout_width="match_parent"
+        android:layout_height="210px"
+        android:background="@color/colorWhite">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:text="@string/access_pic"
+            android:textSize="60px" />
+
+        <ImageView
+            android:id="@+id/img_pic"
+            android:layout_width="188px"
+            android:layout_height="188px"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/img_right2"
+            android:background="@mipmap/people" />
+
+        <ImageView
+            android:id="@+id/img_right2"
+            android:layout_width="25px"
+            android:layout_height="44px"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15px"
+            android:background="@mipmap/arrow_01" />
+    </RelativeLayout>
+</LinearLayout>

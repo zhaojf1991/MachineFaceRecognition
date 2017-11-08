@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_rv"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="@color/colorBlack">
+
+        <ImageView
+            android:id="@+id/back_imgv"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/mutil_register"
+            android:textColor="@color/colorWhite"
+            android:textSize="48px" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/file_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="84px"
+        android:layout_below="@+id/title_rv"
+        android:layout_marginLeft="15px"
+        android:paddingTop="15px"
+        android:text="文件选择"
+        android:textColor="@color/color6f7974"
+        android:textSize="48px" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/file_tv"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:text="图片选择"
+            android:textSize="60px" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="请选择文件夹，上传图片"
+            android:textColor="@color/hint"
+            android:textSize="14dp" />
+
+        <ImageView
+            android:id="@+id/file_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="15px"
+            android:background="@mipmap/imgfile" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="1500px"
+        android:layout_height="140px"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60px"
+        android:background="@drawable/btn_blue_shape"
+        android:text="@string/submit"
+        android:textColor="@color/colorWhite"
+        android:textSize="60px" />
+</RelativeLayout>

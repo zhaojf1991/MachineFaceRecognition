@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:id="@+id/takepic_imgv"
+        android:layout_width="200px"
+        android:layout_height="300px"
+        android:layout_gravity="center_vertical"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="15px"
+        android:layout_marginTop="10px" />
+
+    <ImageView
+        android:id="@+id/pic_imgv"
+        android:layout_width="200px"
+        android:layout_height="300px"
+        android:layout_marginBottom="10px"
+        android:layout_marginLeft="150px"
+        android:layout_marginTop="10px" />
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="100px"
+        android:textColor="@color/color36383c"
+        android:textSize="54px" />
+
+    <TextView
+        android:id="@+id/number_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="100px"
+        android:textColor="@color/color36383c"
+        android:textSize="54px" />
+
+    <TextView
+        android:id="@+id/taketime_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="100px"
+        android:textSize="54px" />
+</LinearLayout>

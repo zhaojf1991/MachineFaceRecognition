@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150px"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/sysid"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="15px"
+        android:text="系统ID"
+        android:textColor="@color/color91989e"
+        android:textSize="54px" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150px"
+        android:layout_toRightOf="@+id/sysid"
+        android:text="姓名"
+        android:textColor="@color/color91989e"
+        android:textSize="54px" />
+
+    <TextView
+        android:id="@+id/gh"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="400px"
+        android:layout_toRightOf="@+id/name"
+        android:text="工号"
+        android:textColor="@color/color91989e"
+        android:textSize="54px" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:text="联系电话"
+        android:layout_toLeftOf="@+id/time"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="500px"
+        android:textColor="@color/color91989e"
+        android:textSize="54px" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="60px"
+        android:text="创建时间"
+        android:textColor="@color/color91989e"
+        android:textSize="54px" />
+</RelativeLayout>

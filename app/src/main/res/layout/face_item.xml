@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="160px"
+    android:layout_centerVertical="true"
+    android:orientation="horizontal">
+
+    <CheckBox
+        android:id="@+id/cb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:focusable="false" />
+
+
+    <TextView
+        android:id="@+id/id"
+        android:layout_width="100px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="80px"
+        android:text="220"
+        android:textColor="@color/color36383c"
+        android:textSize="54px" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="150px"
+        android:layout_toRightOf="@+id/id"
+        android:text="默认名"
+        android:textColor="@color/color36383c"
+        android:textSize="54px" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="450px"
+        android:layout_toRightOf="@+id/name"
+        android:text="12345"
+        android:textColor="@color/color36383c"
+        android:textSize="45px" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="500px"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="500px"
+        android:text="12345678910"
+        android:textColor="@color/color36383c"
+        android:textSize="45px" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="60px"
+        android:text="2017-09-01"
+        android:textColor="@color/color36383c"
+        android:textSize="45px" />
+</RelativeLayout>

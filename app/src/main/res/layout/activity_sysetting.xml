@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbg"
+    android:orientation="vertical"
+    tools:context="com.minivision.machinefacerecognition.activity.MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/title_rv"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="@color/colorBlack">
+
+        <ImageView
+            android:id="@+id/back_imgv"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/systemsetting"
+            android:textColor="@color/colorWhite"
+            android:textSize="48px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="50px"
+        android:orientation="horizontal">
+
+        <include layout="@layout/single_register" />
+
+        <include layout="@layout/multi_register" />
+
+        <include layout="@layout/face_query" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+
+        <include layout="@layout/face_daily" />
+
+        <include layout="@layout/door_control" />
+
+        <include layout="@layout/threshold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginLeft="50px"
+        android:layout_marginTop="30px"
+        android:orientation="horizontal">
+
+        <include layout="@layout/sysempwd_control" />
+
+    </LinearLayout>
+</LinearLayout>

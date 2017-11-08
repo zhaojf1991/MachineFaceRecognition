@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/threshold_control_rv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorbg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlack">
+
+        <ImageView
+            android:id="@+id/back_imgv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/threshold_control"
+            android:textColor="@color/colorWhite"
+            android:textSize="48px" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_rv"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15px"
+                android:text="阀值"
+                android:textSize="60px" />
+
+
+            <EditText
+                android:id="@+id/threshold_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:background="@color/colorWhite"
+                android:inputType="number"
+                android:maxLength="3"
+                android:paddingBottom="5px"
+                android:paddingLeft="25px"
+                android:paddingTop="5px"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/hint"
+                android:textSize="60px" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/line" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorWhite"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="15px"
+                android:text="识别间隔"
+                android:textSize="60px" />
+
+            <EditText
+                android:id="@+id/interval_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorWhite"
+                android:inputType="number"
+                android:paddingBottom="5px"
+                android:paddingLeft="25px"
+                android:maxLength="3"
+                android:paddingTop="5px"
+                android:singleLine="true"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/hint"
+                android:textSize="60px" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="60px"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/sure_btn"
+            android:layout_width="1500px"
+            android:layout_height="140px"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/btn_blue_shape"
+            android:text="确定"
+            android:textColor="@color/colorWhite"
+            android:textSize="60px" />
+
+        <Button
+            android:id="@+id/cancel_btn"
+            android:layout_width="1500px"
+            android:layout_height="140px"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="20px"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_white_shape"
+            android:text="取消"
+            android:textColor="@color/color00c4e6"
+            android:textSize="60px" />
+    </LinearLayout>
+</RelativeLayout>

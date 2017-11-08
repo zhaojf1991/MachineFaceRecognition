@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/multi_register_rv"
+    android:layout_width="480px"
+    android:layout_height="480px"
+    android:layout_marginLeft="15px"
+    android:layout_marginRight="15px"
+    android:background="@mipmap/img"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@mipmap/icon_batch" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="50px"
+        android:text="@string/mutil_register"
+        android:textColor="#36383c"
+        android:textSize="60px" />
+
+
+</RelativeLayout>

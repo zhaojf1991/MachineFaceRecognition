@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorbg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/title_rv"
+        android:layout_width="match_parent"
+        android:layout_height="200px"
+        android:background="@color/colorBlack">
+
+        <ImageView
+            android:id="@+id/back_imgv"
+            android:layout_width="100px"
+            android:layout_height="100px"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:background="@mipmap/back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/face_daily"
+            android:textColor="@color/colorWhite"
+            android:textSize="48px" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="84px"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15px"
+            android:paddingTop="15px"
+            android:text="搜索条件"
+            android:textColor="@color/color6f7974"
+            android:textSize="48px" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15px"
+            android:text="姓名"
+            android:textColor="@color/color6f7974"
+            android:textSize="60px" />
+
+        <EditText
+            android:id="@+id/name_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@color/colorWhite"
+            android:paddingBottom="5px"
+            android:paddingLeft="25px"
+            android:paddingTop="5px"
+            android:singleLine="true"
+            android:textColor="@color/color6f7974"
+            android:textColorHint="@color/hint"
+            android:textSize="60px" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15px"
+            android:text="开始时间"
+            android:textColor="@color/color6f7974"
+            android:textSize="60px" />
+
+        <EditText
+            android:id="@+id/starttime_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/et_sytle"
+            android:paddingBottom="5dp"
+            android:paddingLeft="25dp"
+            android:singleLine="true"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/line" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="15px"
+            android:text="结束时间"
+            android:textColor="@color/color6f7974"
+            android:textSize="60px" />
+
+        <EditText
+            android:id="@+id/endtime_et"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/et_sytle"
+            android:paddingBottom="5dp"
+            android:paddingLeft="25dp"
+            android:singleLine="true"
+            android:textSize="14dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@drawable/line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/query_btn"
+            android:layout_width="260px"
+            android:layout_height="88px"
+            android:layout_marginBottom="40px"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40px"
+            android:layout_toLeftOf="@+id/clear_btn"
+            android:background="@drawable/btn_blue_shape"
+            android:text="查询"
+            android:textColor="@color/colorWhite"
+            android:textSize="48px" />
+
+        <Button
+            android:id="@+id/clear_btn"
+            android:layout_width="260px"
+            android:layout_height="88px"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="40px"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40px"
+            android:background="@drawable/btn_white_shape"
+            android:text="清空"
+            android:textColor="@color/colorText"
+            android:textSize="48px" />
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5px"
+            android:layout_marginLeft="15px"
+            android:text="日志列表"
+            android:textSize="48px" />
+
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:background="@color/colorWhite"-->
+            <!--android:orientation="horizontal">-->
+
+            <!--<Button-->
+                <!--android:id="@+id/edit_btn"-->
+                <!--android:layout_width="260px"-->
+                <!--android:layout_height="88px"-->
+                <!--android:layout_marginBottom="40px"-->
+                <!--android:layout_marginLeft="15px"-->
+                <!--android:layout_marginTop="40px"-->
+                <!--android:layout_toLeftOf="@+id/clear_btn"-->
+                <!--android:background="@drawable/btn_blue_shape"-->
+                <!--android:text="编辑"-->
+                <!--android:textColor="@color/colorWhite"-->
+                <!--android:textSize="48px" />-->
+
+            <!--<Button-->
+                <!--android:id="@+id/update_btn"-->
+                <!--android:layout_width="260px"-->
+                <!--android:layout_height="88px"-->
+                <!--android:layout_marginBottom="40px"-->
+                <!--android:layout_marginLeft="15px"-->
+                <!--android:layout_marginTop="40px"-->
+                <!--android:background="@drawable/btn_white_shape"-->
+                <!--android:text="删除"-->
+                <!--android:textColor="@color/colorText"-->
+                <!--android:textSize="48px" />-->
+        <!--</LinearLayout>-->
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp">
+
+        <ListView
+            android:id="@+id/daily_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorWhite"
+            android:layoutAnimation="@anim/listview" />
+    </RelativeLayout>
+</LinearLayout>

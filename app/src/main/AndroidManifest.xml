@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.minivision.machinefacerecognition">
+
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name="com.minivision.app"
+        android:allowBackup="true"
+        android:icon="@mipmap/icon_08"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.BackstageActivity" />
+        <activity android:name=".activity.SettingCheckActivity" />
+        <activity android:name=".activity.SystemSettingActivity" />
+        <activity android:name=".activity.SingleRegisterActivity" />
+        <activity android:name=".activity.MultiRegisterActivity" />
+        <activity android:name=".activity.FaceQueryActivity2" />
+        <activity
+            android:name=".activity.FaceDailyActivity"
+            android:theme="@android:style/Theme.Holo.Light" />
+        <activity android:name=".activity.DoorControlActivity" />
+        <activity android:name=".activity.SystempwdActivity" />
+        <activity android:name=".activity.singleregister.ShowPicActivity" />
+        <activity android:name=".activity.mutilupload.MutilloadupActivity" />
+        <activity android:name=".activity.RecongnitionActivity" />
+        <activity android:name=".activity.singleregister.NativePicActivity" />
+        <activity android:name=".activity.ResultActivity" />
+        <activity android:name=".activity.ThresholdActivity" />
+        <activity android:name=".activity.UnRealActivity" />
+    </application>
+
+</manifest>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layoutAnimation xmlns:android="http://schemas.android.com/apk/res/android">
+    android:animation="@anim/anim_item"//每个item
+    android:animationOrder="normal"//方式 random resve normal
+    android:delay="0.5">//通常是300ms 0.5=150ms
+
+</layoutAnimation>
